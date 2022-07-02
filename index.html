@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Desarrollador Fullstack | Manuel Imfeld</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quien-soy">Quien soy</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="cv-manuelimfeld.pdf" download>Cv</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section" id="inicio">
+            <img src="img/Avatar-logo.png" alt="" class="avatar">
+            <h1>Manuel Imfeld</h1>
+            <p>Desarrollador Fullstack</p>
+            <div class="social-network">
+            <a href="https://linkedin.com/in/manuimfeld" target="_blank">
+                <img src="img/Linkedin-logo.png" alt="">
+                <p>Linkedin</p>
+            </a>
+            <a href="https://github.com/manuimfeld" target="_blank">
+                <img src="img/Github-logo.png" alt="">
+                <p>Github</p>
+            </a>
+            </div>
+            <a href="#quien-soy" class="scroll"><img src="https://biniou.net/img/down.78e3dd50.png" alt=""></a>
+        </section>
+    </main>
+    <section class="quien-soy" id="quien-soy">
+        <h1>Quien soy</h1>
+        <div class="quien-soy-info">
+            <img src="img/Avatar-logo.png" alt="">
+            <div class="card">
+                <div class="left">
+                <p>Hola, soy Manuel Imfeld, tengo 20 años y soy Desarrollador Web. Actualmente me dedico a crear proyectos propios para enseñar mis conocimientos en el desarrollo web desde el lado del cliente (Frontend) hasta el lado del servidor (Backend).</p>
+                <a href="cv-manuelimfeld.pdf" class="CV" download>Descargar CV</a>
+                </div>
+                <div class="right">
+                    <p>Número de télefono: <strong>+54 9 11 44036816</strong></p>
+                    <p>Email: <strong>manu_jadir@hotmail.com</strong></p>
+                    <p>Linkedin: <strong>manuimfeld</strong></p>
+                    <p>Github: <strong>manuimfeld</strong></p>
+                </div>
+            </div>
+        </div>
+        <a href="#habilidades" class="scroll"><img src="https://biniou.net/img/down.78e3dd50.png" alt=""></a>
+    </section>
+    <section class="habilidades" id="habilidades">
+        <h1>Habilidades</h1>
+        <div class="skills">
+            <article>
+                <img src="https://www.devmizan.com/wp-content/uploads/web-development-1.png" alt="">
+                <strong>Habilidades principales</strong>
+                <p>HTML</p>
+                <p>CSS Flexbox y Grid</p>
+                <p>JavaScript (ES6+, AJAX)</p>
+                <p>React Hooks</p>
+            </article>
+            <article>
+                <img src="https://cdn0.iconfinder.com/data/icons/soft-skills-people/100/decision_making_soft_skill_color_skills_people-512.png" alt="">
+                <strong>Habilidades blandas</strong>
+                <p>Comunicación</p>
+                <p>Trabajo en equipo</p>
+                <p>Flexibilidad</p>
+                <p>Proactividad</p>
+            </article>
+            <article>
+                <img src="https://miro.medium.com/max/1400/1*x8skvl_gFGVBqvwDZTJhtg.png" alt="">
+                <strong>Otras habilidades</strong>
+                <p>Bootstrap</p>
+                <p>NodeJS</p>
+                <p>MongoDB</p>
+                <p>Figma</p>
+            </article>
+        </div>
+        <a href="#proyectos" class="scroll"><img src="https://biniou.net/img/down.78e3dd50.png" alt=""></a>
+    </section>
+    <section class="proyectos" id="proyectos">
+        <h1>Proyectos</h1>
+        <div class="container">
+            <article><img src="img/work-artistsimilar.png" alt=""></article>
+            <article><img src="img/work-ecommerce.png" alt=""></article>
+            <article><img src="img/work-todolist.png" alt=""></article>
+            <article><img src="img/work-ecommerce.png" alt=""></article>
+            <article><img src="img/work-todolist.png" alt=""></article>
+            <article><img src="img/work-artistsimilar.png" alt=""></article>
+        </div>
+        <a href="https://github.com/manuimfeld" target="blank" class="more-proyects">Ver más</a>
+        <a href="#contacto" class="scroll"><img src="https://biniou.net/img/down.78e3dd50.png" alt=""></a>
+    </section>
+    <section class="contacto" id="contacto">
+        <h1>Contacto</h1>
+        <div class="contact-info">
+        <div class="message">
+        <h3>¿Tienes algo para decirme? ¡Contáctame!</h3>
+        <p>¿No te gustan los formularios? Envíame un <a href = "mailto: manu_jadir@hotmail.com">email</a></p>
+        </div>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xoqrbkzb" method="post">
+            <input type="text" name="name" id="full-name" placeholder="Ej: Gustavo Lopez" required="" class="text-input">
+            <input type="email" name="_replyto" id="email-address" placeholder="Ej: loremips@gmail.com" required="" class="text-input">
+            <input type="text" name="" id="" placeholder="Motivo">
+            <textarea rows="5" name="message" id="message" placeholder="Escribe tu mensaje aquí." required=""></textarea>
+            <button>Enviar mensaje</button>
+        </form>
+        </div>
+        <a href="#inicio" class="scroll"><img src="https://biniou.net/img/down.78e3dd50.png" alt=""></a>
+    </section>
+    <footer>
+        <p>@manuimfeld</p>
+    </footer>
+</body>
+</html>
