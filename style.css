@@ -388,6 +388,10 @@ main section p {
     border-radius: 10px;
 }
 
+.proyectos article a {
+    
+}
+
 .proyectos .more-proyects {
     text-decoration: none;
     padding: 5px 10px;
