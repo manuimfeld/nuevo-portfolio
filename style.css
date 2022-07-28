@@ -9,12 +9,24 @@ html, body {
 
 /* --- HEADER SECTION --- */
 
-header {
+/* header {
     max-width: 100vw;
     height: 80px;
     position: absolute;
     left: 0;
     right: 0;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.568);
+} */
+
+header {
+    max-width: 100vw;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    right: 0;
+    background: #323150;
     border-bottom: 1px solid rgba(124, 124, 124, 0.568);
 }
 
@@ -89,6 +101,7 @@ main section .avatar {
 main section h1 {
     margin: 15px 0px 5px 0px;
     font-size: 32px;
+    color: rgb(249, 253, 0)
 }
 
 main section p {
@@ -154,6 +167,11 @@ main section p {
 
 /* --- QUIEN SOY SECTION --- */
 
+.section-name {
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+
 .quien-soy {
     width: auto;
     height: 100vh;
@@ -172,6 +190,7 @@ main section p {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin: auto;
 }
 
 .quien-soy-info img {
@@ -181,34 +200,62 @@ main section p {
 }
 
 .card {
-    height: 200px;
+    width: 100%;
+    height: auto;
     background: rgb(255, 255, 255);
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
 }
 
-.left, .right {
+.card-left {
     width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px 0 0;
+}
+
+.card-left img {
+    width: 50%;
+    height: 250px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.card-left p {
+    width: 80%;
+    line-height: 25px;
+}
+
+.card-right {
+    width: 50%;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    padding: 0 0 0 10px;
 }
 
-.card p {
-    width: 100%;
-}
-
-.card .CV {
+.card-right a {
+    text-align: center;
+    width: 20%;
     text-decoration: none;
     background: #e63131;
     color: #fafafa;
     padding: 10px 40px;
     border-radius: 20px;
     display: inline-block;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    margin: auto 0;
 }
 
 .quien-soy .scroll {
@@ -309,10 +356,6 @@ main section p {
     position: relative;
 }
 
-.proyectos h1 {
-    margin: 10px;
-}
-
 .proyectos .container {
     width: 100%;
     height: auto;
@@ -325,10 +368,10 @@ main section p {
 .proyectos article {
     width: 25%;
     height: 180px;
-    padding: 15px 15px;
+    padding: 5px 5px;
     background-color: white;
     margin: 10px 0px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -365,7 +408,7 @@ main section p {
 
 .contacto {
     width: auto;
-    height: 90vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -480,4 +523,141 @@ footer {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #bbbbbb;
+}
+
+/* --- MEDIA QUERY --- */
+
+@media (max-width: 810px) {
+    header, nav, ul {
+        width: 100vw;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .habilidades, .skills, .proyectos, .contacto, .quien-soy {
+        width: 100vw;
+        height: auto;
+        margin: 0 auto 20px auto;
+        min-height: 100vh;
+    }
+
+    .quien-soy {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .card {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .card-left, .card-right {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+    .card-left img {
+        width: auto;
+    }
+
+    .card-left p {
+        width: 75%;
+    }
+
+    .card-right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills article {
+        width: 60vw;
+        margin: 20px auto;
+    }
+
+    .proyectos .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container article {
+        width: 65vw;
+    }
+
+    .contacto {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info h3 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .message {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #fs-frm {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+    .contacto input[type=email], .contacto input[type=text] {
+        margin: 10px 0;
+    }
+
+    .contacto input[type=text]:nth-child(3) {
+        margin: 10px 0px;
+        width: 90%;
+    }
+
+    .contacto textarea {
+        margin: 10px 0px;
+        width: 90%;
+    }
+
+    #fs-frm button {
+        margin: 10px auto
+    }
+}
+
+@media (min-width: 916px) {
+    .contacto {
+        height: auto;
+    }
+
+    .contacto input[type=email] {
+        margin: 20px 0 0 0;
+     }
+}
+
+@media (min-width: 1140px) {
+    .contacto input[type=email] {
+        margin: 0 0 0 auto;
+    }
 }
