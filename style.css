@@ -394,7 +394,7 @@ main section p {
 
 .proyectos {
     width: auto;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -423,6 +423,10 @@ main section p {
     margin: 10px 0px;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.proyectos article:nth-child(7) {
+    margin: 0 auto;
 }
 
 .proyectos article:hover {
@@ -532,6 +536,7 @@ main section p {
     border-radius: 10px;
     border: none;
     outline: none;
+    margin-top: 20px;
     padding: 10px 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
