@@ -452,7 +452,7 @@ main section p {
     background: red;
     color: white;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
 }
 
